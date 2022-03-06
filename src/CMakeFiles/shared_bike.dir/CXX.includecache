@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+./common/configdef.h
+string
+-
+
+./common/iniconfig.h
+string
+-
+configdef.h
+./common/configdef.h
+
+/home/skx/shared_bike/src/main.cpp
+iniconfig.h
+/home/skx/shared_bike/src/iniconfig.h
+configdef.h
+/home/skx/shared_bike/src/configdef.h
+
